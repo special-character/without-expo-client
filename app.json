@@ -1,0 +1,10 @@
+{
+  "name": "Gather",
+  "displayName": "gather",
+  "expo": {
+    "name": "slap",
+    "slug": "slap",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"]
+  }
+}
