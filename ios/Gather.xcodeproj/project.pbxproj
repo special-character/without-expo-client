@@ -12,8 +12,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		74D153D26E6C2C66CB249D8B /* libPods-Gather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3641EEC9C52750DDBB1596 /* libPods-Gather.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		E14FD25D2550D7D800CB4385 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14FD25B2550D7D800CB4385 /* LaunchScreen.xib */; };
-		E14FD2612550D7F700CB4385 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14FD2602550D7F700CB4385 /* SplashScreen.storyboard */; };
+		E14FD2682550E33500CB4385 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14FD2672550E33500CB4385 /* SplashScreen.storyboard */; };
+		E14FD26D2550E43A00CB4385 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14FD26B2550E43A00CB4385 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		3A3641EEC9C52750DDBB1596 /* libPods-Gather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF8C2CEFF08BCA3DAFD40F0 /* Pods-Gather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gather.debug.xcconfig"; path = "Target Support Files/Pods-Gather/Pods-Gather.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		E14FD25C2550D7D800CB4385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ../../slap/ios/slap/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E14FD2602550D7F700CB4385 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = ../../slap/ios/slap/SplashScreen.storyboard; sourceTree = "<group>"; };
+		E14FD2672550E33500CB4385 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Gather/SplashScreen.storyboard; sourceTree = "<group>"; };
+		E14FD26C2550E43A00CB4385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Gather/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -55,9 +55,9 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				E14FD25B2550D7D800CB4385 /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				E14FD2602550D7F700CB4385 /* SplashScreen.storyboard */,
+				E14FD26B2550E43A00CB4385 /* LaunchScreen.xib */,
+				E14FD2672550E33500CB4385 /* SplashScreen.storyboard */,
 			);
 			name = Gather;
 			sourceTree = "<group>";
@@ -180,10 +180,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14FD25D2550D7D800CB4385 /* LaunchScreen.xib in Resources */,
+				E14FD26D2550E43A00CB4385 /* LaunchScreen.xib in Resources */,
+				E14FD2682550E33500CB4385 /* SplashScreen.storyboard in Resources */,
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				E14FD2612550D7F700CB4385 /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n../node_modules/expo-updates/scripts/create-manifest-ios.sh\n";
+			shellScript = "export NODE_BINARY=/Users/brandonroberts/.nvm/versions/node/v12.18.3/bin/node\n../node_modules/react-native/scripts/react-native-xcode.sh\n../node_modules/expo-updates/scripts/create-manifest-ios.sh\n";
 		};
 		99FF44D59CAA76258A0F7D12 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -278,10 +278,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E14FD25B2550D7D800CB4385 /* LaunchScreen.xib */ = {
+		E14FD26B2550E43A00CB4385 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E14FD25C2550D7D800CB4385 /* Base */,
+				E14FD26C2550E43A00CB4385 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
