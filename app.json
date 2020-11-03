@@ -2,8 +2,8 @@
   "name": "Gather",
   "displayName": "gather",
   "expo": {
-    "name": "slap",
-    "slug": "slap",
+    "name": "Gather",
+    "slug": "gather",
     "version": "1.0.0",
     "assetBundlePatterns": ["**/*"]
   }
